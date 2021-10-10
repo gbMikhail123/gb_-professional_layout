@@ -1,0 +1,258 @@
+* {
+margin: 0;
+padding: 0;
+}
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*Шапка сайта*/
+
+.header {
+    background-color: #222222;
+    padding: 19px 0;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 40px;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.main__banner {
+height: 764px;
+background-color: #F1E4E6;
+margin: 0 0 50px 0;
+}
+
+.main__banner__wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    background-image: url(../img/main_banner_man.png);
+    background-repeat: no-repeat;
+    background-position: -218px bottom;
+}
+.main__banner__text {
+    max-width: 377px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.main__banner__text__decor {
+    color: #F16D7F;    
+}
+
+.main__category__text__decor {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/*Категории на главной*/
+
+.main__category__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__category__item {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/category_for_women.png");
+    background-repeat: no-repeat;
+
+}
+
+.main__category__text {
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.main__category__item:not(:last-child) {
+    width: 360px;
+    margin: 0 0 30px 0;
+}
+
+.main__category__item:nth-child(2) {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/category_for_men.png");
+    background-repeat: no-repeat;
+}
+    
+.main__category__item:nth-child(3) {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/category_for_kids.jpg");
+    background-repeat: no-repeat; 
+}
+
+.main__category__item:last-child {
+    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("../img/category_accesories.png");
+    background-repeat: no-repeat; 
+    height: 180px;
+}
+
+/* Каталог на главной */
+
+.main__catalog__headind {
+    margin-top: 96px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main__catalog__heading__description {
+    font-size: 17px;
+}
+.main__catalog {
+    margin: 48px 0 0 0;
+}
+.main__catalog__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.main__catalog__item {
+    width: 360px;
+    height: 100%;
+   
+    text-align: left;
+    margin: 0 0 30px 0;
+
+}
+
+.main__catalog__description {
+    font-size: 16px;
+}
+.main__catalog_about {
+    margin: 13px 0 0 0;
+    font-size: 14px;
+}
+
+.main__catalog__price {
+    margin: 18px 0 0 0;
+    color: #F16D7F;
+    font-size: 16px;
+}
+
+.main__catalog__allProducts__button {
+    margin: 60px 0 95px 0;
+    padding: 15px 39px;
+    background-color: transparent;
+    font-size: 19px;
+    color: #F16D7F;
+    align-items: center;
+    border-color: #F16D7F;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+/*Блок преимуществ на главной*/
+
+
+.main__benefits {
+    padding: 103px 0;
+    
+    background-color: rgba(34, 34, 36, 1);
+}
+
+.main__benefits__wrap {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.benefit__item {
+    width: 360px;
+    text-align: center;
+}
+
+.benefit__icon h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fbfbfb;
+  margin-top: 25px;
+}
+
+
+.benefit__icon p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 16px;
+}
+
+.benefit {
+    width: 100%;
+    height: 40px;
+}
+
+/*
+
+.main__benefits {
+    background-color: rgba(34, 34, 36, 1);
+    height: 341px;
+    margin-top: 95px;
+}
+
+.main__benefits_wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-top: 103px;
+    color: #FBFBFB; 
+}
+.benefits__block {
+    align-items: center;
+    flex-direction: column;
+}
+.free__delivery {
+    display: block;
+    /*background-color:red;
+    width: 50px;
+    height: 50px;*/
+/*
+    margin: 0 auto;
+
+}
+
+.sales__discounts {
+    background-image: url(../img/benefits/percent.svg);
+    background-repeat: no-repeat; 
+
+}
+
+
+.quality__assurance {
+    background-image: url(../img/benefits/crown.svg);
+    background-repeat: no-repeat; 
+}
+
+.main__benefits__heading {
+    margin-top: 16px;
+}
+
+.main__benefits__descriptions {
+    margin-top: 16px;
+
+}*/
